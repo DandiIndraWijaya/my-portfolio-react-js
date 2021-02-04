@@ -1,0 +1,10 @@
+.paper {
+    margin: auto;
+    width: 95%;
+}
+
+@media only screen and (max-width: 800px){
+    .paper {
+        width: 100%;
+    }
+}
