@@ -1,0 +1,42 @@
+.navigation {
+    position: fixed;
+    background-color: white;
+    left:0;
+    right:0;
+    bottom: 30px;
+    padding: 5px 10px 10px;
+    margin-left:auto;
+    margin-right:auto;
+    width: max-content;
+    border-radius: 8px;
+    box-shadow: 8px 8px 16px 8px rgba(0,0,0,0.2);
+    
+}
+
+.icon {
+    transition: 0.5s;
+    margin: 20px 20px 5px;
+    z-index: 9;
+}
+
+.icon:hover{
+    transform: rotate(360deg);
+}
+
+.selected {
+    color: "white";
+    background-color: "#7579e7";
+    padding: "2px";
+    border-radius: "8px";
+}
+
+.label {
+    font-size: small;
+}
+
+@media only screen and (max-width: 925px){
+    
+    .icon {
+        margin: 10px;
+    }
+} 

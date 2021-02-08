@@ -1,0 +1,11 @@
+.flex {
+    display: flex;
+}
+
+.flexItem {
+    flex-grow: 1;
+}
+
+.me {
+    float: right;
+}
