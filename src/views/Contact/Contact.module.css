@@ -4,8 +4,8 @@
     align-items: center;
 }
 
-.skills{
-    margin-top: 50px;
+.contact{
+    margin-top: 130px;
 }
 
 .flexItem{
@@ -28,10 +28,9 @@
 }
 
 @media only screen and (max-width: 925px){
-    .skills{
+    .contact{
         margin-top: 20px;
     }
-
     .flex{
         flex-direction: column;
     }

@@ -6,6 +6,7 @@ import Welcome from "./views/Welcome/Welcome";
 import Skills from "./views/Skills/Skills";
 import Navigation from "./components/Navigation/Navigation";
 import Works from "./views/Works/Works";
+import Contact from "./views/Contact/Contact";
 
 const Routes = () => {
   const location = useLocation();
@@ -13,7 +14,7 @@ const Routes = () => {
   return (
     <div>
       <SlideRoutes
-        pathList={["/", "/profile", "/skills", "/works"]}
+        pathList={["/", "/profile", "/skills", "/works", "/contact"]}
         location={location}
         duration={500}
       >
@@ -21,6 +22,7 @@ const Routes = () => {
         <Route path="/profile" component={Profile} />
         <Route path="/skills" component={Skills} />
         <Route path="/works" component={Works} />
+        <Route path="/contact" component={Contact} />
       </SlideRoutes>
       <Navigation />
     </div>

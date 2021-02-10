@@ -110,17 +110,19 @@ const Navigation = ({ theme }) => {
               </div>
 
               <div>
-                <FontAwesomeIcon
-                  title="Contact"
-                  className={styles.icon}
-                  size="3x"
-                  icon={faComment}
-                />
-                <br />
-                {location.pathname === "/contact" && (
-                  <span style={selected}>Contact</span>
-                )}
-                {location.pathname !== "/contact" && <span>Contact</span>}
+                <Link to="/contact" className={styles.link}>
+                  <FontAwesomeIcon
+                    title="Contact"
+                    className={styles.icon}
+                    size="3x"
+                    icon={faComment}
+                  />
+                  <br />
+                  {location.pathname === "/contact" && (
+                    <span style={selected}>Contact</span>
+                  )}
+                  {location.pathname !== "/contact" && <span>Contact</span>}
+                </Link>
               </div>
             </div>
           </center>
@@ -148,7 +150,7 @@ const Navigation = ({ theme }) => {
                 </Link>
               </div>
               <div>
-                <Link to="/profile" className={styles.link}>
+                <Link to="profile" className={styles.link}>
                   <FontAwesomeIcon
                     title="Profile"
                     className={styles.icon}
@@ -156,41 +158,75 @@ const Navigation = ({ theme }) => {
                     icon={faUser}
                   />
                   <br />
-                  <span className={styles.label}>Profile</span>
+                  {location.pathname === "/profile" && (
+                    <span style={selected} className={styles.label}>
+                      About
+                    </span>
+                  )}
+                  {location.pathname !== "/profile" && (
+                    <span className={styles.label}>About</span>
+                  )}
                 </Link>
               </div>
 
               <div>
-                <FontAwesomeIcon
-                  title="Skills"
-                  className={styles.icon}
-                  size="2x"
-                  icon={faTools}
-                />
-                <br />
-                <span className={styles.label}>Skills</span>
+                <Link to="skills" className={styles.link}>
+                  <FontAwesomeIcon
+                    title="Skills"
+                    className={styles.icon}
+                    size="2x"
+                    icon={faTools}
+                  />
+                  <br />
+                  {location.pathname === "/skills" && (
+                    <span style={selected} className={styles.label}>
+                      Skills
+                    </span>
+                  )}
+                  {location.pathname !== "/skills" && (
+                    <span className={styles.label}>Skills</span>
+                  )}
+                </Link>
               </div>
 
               <div>
-                <FontAwesomeIcon
-                  title="Works"
-                  className={styles.icon}
-                  size="2x"
-                  icon={faPen}
-                />
-                <br />
-                <span className={styles.label}>Works</span>
+                <Link to="works" className={styles.link}>
+                  <FontAwesomeIcon
+                    title="Works"
+                    className={styles.icon}
+                    size="2x"
+                    icon={faPen}
+                  />
+                  <br />
+                  {location.pathname === "/works" && (
+                    <span style={selected} className={styles.label}>
+                      Works
+                    </span>
+                  )}
+                  {location.pathname !== "/works" && (
+                    <span className={styles.label}>Works</span>
+                  )}
+                </Link>
               </div>
 
               <div>
-                <FontAwesomeIcon
-                  title="Contact"
-                  className={styles.icon}
-                  size="2x"
-                  icon={faComment}
-                />
-                <br />
-                <span className={styles.label}>Contact</span>
+                <Link to="/contact" className={styles.link}>
+                  <FontAwesomeIcon
+                    title="Contact"
+                    className={styles.icon}
+                    size="2x"
+                    icon={faComment}
+                  />
+                  <br />
+                  {location.pathname === "/contact" && (
+                    <span style={selected} className={styles.label}>
+                      Contact
+                    </span>
+                  )}
+                  {location.pathname !== "/contact" && (
+                    <span className={styles.label}>Contact</span>
+                  )}
+                </Link>
               </div>
             </div>
           </center>
