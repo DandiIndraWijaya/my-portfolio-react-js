@@ -94,17 +94,19 @@ const Navigation = ({ theme }) => {
               </div>
 
               <div>
-                <FontAwesomeIcon
-                  title="Works"
-                  className={styles.icon}
-                  size="3x"
-                  icon={faPen}
-                />
-                <br />
-                {location.pathname === "/works" && (
-                  <span style={selected}>Works</span>
-                )}
-                {location.pathname !== "/works" && <span>Works</span>}
+                <Link to="works" className={styles.link}>
+                  <FontAwesomeIcon
+                    title="Works"
+                    className={styles.icon}
+                    size="3x"
+                    icon={faPen}
+                  />
+                  <br />
+                  {location.pathname === "/works" && (
+                    <span style={selected}>Works</span>
+                  )}
+                  {location.pathname !== "/works" && <span>Works</span>}
+                </Link>
               </div>
 
               <div>

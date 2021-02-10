@@ -124,7 +124,7 @@ const Skills = ({ theme }) => {
                   </div>
                 </div>
                 <div className={styles.flexGrow}>
-                  <div className={styles.card}>
+                  <div className={(styles.card, styles.bottomItem)}>
                     <FontAwesomeIcon
                       title="Laravel"
                       color="#fb503b"

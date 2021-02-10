@@ -1,0 +1,17 @@
+.works {
+    width: 45%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.image {
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 925px){
+    
+    .works {
+        width: 100%;
+    }
+} 
