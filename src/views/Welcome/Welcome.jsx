@@ -4,6 +4,7 @@ import { withRouter } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
 import me1 from "../../images/me1.png";
 import Paper from "../../components/Paper/Paper";
+import styles from "./Welcome.module.css";
 // eslint-disable-next-line react/prop-types
 const Welcome = ({ theme }) => {
   // eslint-disable-next-line react/prop-types
@@ -49,11 +50,13 @@ const Welcome = ({ theme }) => {
             classNames="alert"
             unmountOnExit
           >
-            <img
-              src={me1}
-              alt="Dandi"
-              style={{ width: "350px", marginTop: "25px" }}
-            />
+            <div className={styles.me}>
+              <img
+                src={me1}
+                alt="Dandi"
+                style={{ width: "100%", marginTop: "25px" }}
+              />
+            </div>
           </CSSTransition>
         </center>
       </Paper>
