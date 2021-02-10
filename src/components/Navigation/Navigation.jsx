@@ -23,7 +23,7 @@ const Navigation = ({ theme }) => {
   };
 
   useEffect(() => {
-    setTimeout(() => setOnPageValue(true), 500);
+    setTimeout(() => setOnPageValue(true), 2900);
   }, []);
   // eslint-disable-next-line react/prop-types
   const { primary } = theme;
@@ -71,24 +71,26 @@ const Navigation = ({ theme }) => {
                   />
                   <br />
                   {location.pathname === "/profile" && (
-                    <span style={selected}>Profile</span>
+                    <span style={selected}>About</span>
                   )}
-                  {location.pathname !== "/profile" && <span>Profile</span>}
+                  {location.pathname !== "/profile" && <span>About</span>}
                 </Link>
               </div>
 
               <div>
-                <FontAwesomeIcon
-                  title="Skills"
-                  className={styles.icon}
-                  size="3x"
-                  icon={faTools}
-                />
-                <br />
-                {location.pathname === "/skills" && (
-                  <span style={selected}>Skills</span>
-                )}
-                {location.pathname !== "/skills" && <span>Skills</span>}
+                <Link to="skills" className={styles.link}>
+                  <FontAwesomeIcon
+                    title="Skills"
+                    className={styles.icon}
+                    size="3x"
+                    icon={faTools}
+                  />
+                  <br />
+                  {location.pathname === "/skills" && (
+                    <span style={selected}>Skills</span>
+                  )}
+                  {location.pathname !== "/skills" && <span>Skills</span>}
+                </Link>
               </div>
 
               <div>
@@ -196,4 +198,4 @@ const Navigation = ({ theme }) => {
   );
 };
 
-export default withTheme(withRouter(Navigation));
+export default withRouter(withTheme(Navigation));

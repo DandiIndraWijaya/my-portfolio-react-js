@@ -1,0 +1,34 @@
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills{
+    margin-top: 50px;
+}
+
+.flexItem{
+    flex-grow: 1
+}
+
+.card {
+    background-color: white;
+    padding: 10px ;
+    width: max-content;
+    border-radius: 8px;
+    transition: 0.5s;
+    width: 90%;
+    margin: 5px;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px 0 #7579e7;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 925px){
+    .flex{
+        flex-direction: column;
+    }
+} 
