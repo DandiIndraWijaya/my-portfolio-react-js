@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 /* eslint-disable react/prop-types */
 import React, { useState, useEffect } from "react";
 import { withRouter } from "react-router-dom";
@@ -40,8 +41,9 @@ const Profile = ({ theme }) => {
                   }}
                 >
                   My name is Dandi Indra Wijaya I&apos;m from Cilacap Indonesia.
-                  I was born on 5th November 1999. I&apos;m currently studying
-                  Informatic Engineering at Semarang State University.
+                  I was born on 5<sup>th</sup>
+                  November 1999. I&apos;m currently studying Informatic
+                  Engineering at Semarang State University.
                 </p>
                 <p
                   className={styles.description}
