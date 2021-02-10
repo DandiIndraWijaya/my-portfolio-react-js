@@ -43,6 +43,17 @@ const Profile = ({ theme }) => {
                   I was born on 5th November 1999. I&apos;m currently studying
                   Informatic Engineering at Semarang State University.
                 </p>
+                <p
+                  className={styles.description}
+                  style={{
+                    color: secondary,
+                    marginTop: "10px",
+                  }}
+                >
+                  Interested in web-based programming, especially the visual
+                  aspects of the web. Work with attention to detail and
+                  tidiness.
+                </p>
               </div>
             </div>
           </CSSTransition>
